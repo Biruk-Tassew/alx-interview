@@ -14,7 +14,7 @@ def canUnlockAll(boxes):
         is_unlocked = False
         for box_idx in range(len(boxes)):
             is_unlocked = target_key in boxes[box_idx]
-            is_unlocked and= target_key != box_idx
+            is_unlocked = is_unlocked and target_key != box_idx
             if is_unlocked:
                 break
         if not is_unlocked:
