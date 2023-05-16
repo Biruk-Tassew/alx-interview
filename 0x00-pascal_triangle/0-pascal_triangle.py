@@ -1,5 +1,9 @@
 #!/usr/bin/python3
-    
+
+"""
+0-pascal_triangle
+"""
+
 def print_triangle(triangle):
     """
     Print the triangle
