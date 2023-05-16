@@ -11,7 +11,7 @@ def print_triangle(triangle):
     
     dp = [[1]]
         
-    for i in range(1, numRows):
+    for i in range(1, triangle):
         new_row = [1]
         for j in range(1, i):
             new_row.append(dp[i-1][j]+dp[i-1][j-1])
