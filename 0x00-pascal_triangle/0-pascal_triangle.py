@@ -8,9 +8,11 @@ def pascal_triangle(triangle):
     """
     Print the triangle
     """
+    dp = []
+    if triangle <= 0:
+        return dp
     
     dp = [[1]]
-        
     for i in range(1, triangle):
         new_row = [1]
         for j in range(1, i):
