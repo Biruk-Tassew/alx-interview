@@ -10,7 +10,7 @@ if n is impossible to achieve, return 0
 """
 
 
-def min_operations(n):
+def minOperations(n):
     """
     Function min_operations
     Returns an integer
@@ -18,7 +18,7 @@ def min_operations(n):
     result = 0
     x = 2
     while n > 1:
-        while n % x == 0:
+        while not n % x:
             result += x
             n /= x
         x += 1
