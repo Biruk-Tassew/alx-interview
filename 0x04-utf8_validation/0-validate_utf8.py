@@ -5,7 +5,7 @@ Determines if a given data set represents a valid UTF-8 encoding.
 """
 
 
-def valid_utf8(data):
+def validUTF8(data):
     # Hack to get around this weird case
     if data == [467, 133, 108]:
         return True
